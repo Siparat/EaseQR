@@ -14,6 +14,7 @@ button
     background: none
     border: none
     cursor: pointer
+    outline: none
 
 .container
     max-width: 1400px
@@ -27,11 +28,27 @@ h1
     color: $grey-color
     & span
         color: $title-color
+    &::before
+        content: '+'
+        width: 15px
+        height: 15px
+        background-color: $title-color
+        border-radius: 50%
+        position: absolute
+        font-weight: 300
+        font-size: 15px
+        top: 78px
+        right: 37px
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #E5EBFE
 
 #mockup
     position: absolute
     right: 0
     top: 50px
 
-
-@import 'base/main'
+@import 'blocks/main'
+@import 'buttons'
+@import 'blocks/advantages'
