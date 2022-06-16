@@ -1,0 +1,33 @@
+.relevance
+    min-height: 681px
+    padding: 91px 0 200px
+    &__items
+        display: flex
+        justify-content: space-between
+        margin-top: 40px
+    &__item
+        max-width: 260px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:nth-child(1) .relevance__item-title
+            margin-top: -5px
+        &:nth-child(1) img
+            transform: translateY(-12px)
+        &:nth-child(2) .relevance__item-title
+            margin-top: 38.7px
+        &:nth-child(3) .relevance__item-title
+            margin-top: 18px
+        &-title
+            font-family: $museo
+            font-weight: 600
+            font-size: 24px
+            line-height: 127%
+            color: $grey-color
+        &-descr
+            font-weight: 300
+            font-size: 18px
+            line-height: 26px
+            text-align: center
+            color: $grey-items-color
+            margin-top: 15px        

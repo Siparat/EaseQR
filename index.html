@@ -50,7 +50,7 @@
                 <div class="advantages__item">
                     <div class="advantages__item-img"><img src="icons/advantages/1.svg" alt="1"></div>
                     <div class="advantages__item-text">
-                        <p class="advantages__item-title">Обслуживание нового уровня</p>
+                        <h3 class="advantages__item-title">Обслуживание нового уровня</h3>
                         <ul class="advantages__item-list">
                             <li class="advantages__item-li">QR-код меню в заведениях – актуальный тренд в сфере FoodTech</li>
                             <li class="advantages__item-li">Доступный, понятный и удобный интерфейс для клиента</li>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__item-text">
-                        <p class="advantages__item-title">Полноценный сайт доставки</p>
+                        <h3 class="advantages__item-title">Полноценный сайт доставки</h3>
                         <ul class="advantages__item-list">
                             <li class="advantages__item-li">Организация процессов доставки блюд за 48 часов</li>
                             <li class="advantages__item-li">Адаптивная версия для ПК и смартфона</li>
@@ -72,7 +72,7 @@
                 <div class="advantages__item">
                     <div class="advantages__item-img"><img src="icons/advantages/3.svg" alt="3"></div>
                     <div class="advantages__item-text">
-                        <p class="advantages__item-title">Оптимизация расходов</p>
+                        <h3 class="advantages__item-title">Оптимизация расходов</h3>
                         <ul class="advantages__item-list">
                             <li class="advantages__item-li">Без оплаты сторонних сервисов за каждый заказ</li>
                             <li class="advantages__item-li">Экономия на разработке сайта и мобильного приложения</li>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__item-text">
-                        <p class="advantages__item-title">Увеличение продаж</p>
+                        <h3 class="advantages__item-title">Увеличение продаж</h3>
                         <ul class="advantages__item-list">
                             <li class="advantages__item-li">Рост среднего чека от 30% у всех наших клиентов</li>
                             <li class="advantages__item-li">Увеличение позиций в заказе за счет качественного контента</li>
@@ -94,7 +94,7 @@
                 <div class="advantages__item">
                     <div class="advantages__item-img"><img src="icons/advantages/5.svg" alt="5"></div>
                     <div class="advantages__item-text">
-                        <p class="advantages__item-title">Клиентоориентированность</p>
+                        <h3 class="advantages__item-title">Клиентоориентированность</h3>
                         <ul class="advantages__item-list">
                             <li class="advantages__item-li">Доступно без установки мобильного приложения</li>
                             <li class="advantages__item-li">Быстрый заказ и подача блюд</li>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__item-text">
-                        <p class="advantages__item-title">Быстрое решение для бизнеса</p>
+                        <h3 class="advantages__item-title">Быстрое решение для бизнеса</h3>
                         <ul class="advantages__item-list">
                             <li class="advantages__item-li">Готовый сайт и меню за 24 часа</li>
                             <li class="advantages__item-li">Наполнение «под ключ» в подарок</li>
@@ -116,7 +116,7 @@
                 <div class="advantages__item">
                     <div class="advantages__item-img"><img src="icons/advantages/7.svg" alt="7"></div>
                     <div class="advantages__item-text">
-                        <p class="advantages__item-title">Лёгкое управление для владельца</p>
+                        <h3 class="advantages__item-title">Лёгкое управление для владельца</h3>
                         <ul class="advantages__item-list">
                             <li class="advantages__item-li">Мгновенные корректировки меню через телефон или ПК</li>
                             <li class="advantages__item-li">Быстрое исключение позиций из стоп-листа</li>
@@ -141,42 +141,407 @@
             <h2 class="title title_white">Как работает EASY QR?</h2>
             <div class="how-work__wrapper">
                 <div class="how-work__tabs">
-                    <button class="how-work__tabs-btn _active">В заведении</button>
-                    <button class="how-work__tabs-btn">Доставка</button>
+                    <button data-tab-how-work-btn="organisation" class="how-work__tabs-btn _active">В заведении</button>
+                    <button data-tab-how-work-btn="delivery" class="how-work__tabs-btn">Доставка</button>
                 </div>
-                <div class="how-work__content">
+
+                <div data-tab-how-work-content="organisation" class="how-work__content _active">
                     <div class="how-work__item">
                         <div class="how-work__item-circle"><div class="how-work__item-number">1</div></div>
                         <p class="how-work__item-text">Размещение QR – кода в заведении</p> 
-                        <div id="arrow1" class="how-work__item-arrow"><img src="icons/how-work/1.svg" alt="arrow"></div>
+                        <div id="arrow1" class="how-work__item-arrow"><img src="icons/how-work/1_1.svg" alt="arrow"></div>
                     </div>
                     <div class="how-work__item">
                         <div class="how-work__item-circle"><div class="how-work__item-number">2</div></div>
                         <p class="how-work__item-text">Гость сканирует QR – код</p> 
-                        <div id="arrow2" class="how-work__item-arrow"><img src="icons/how-work/2.svg" alt="arrow"></div>
+                        <div id="arrow2" class="how-work__item-arrow"><img src="icons/how-work/1_2.svg" alt="arrow"></div>
                     </div>
                     <div class="how-work__item">
                         <div class="how-work__item-circle"><div class="how-work__item-number">3</div></div>
                         <p class="how-work__item-text">Просматривает меню</p> 
-                        <div id="arrow3" class="how-work__item-arrow"><img src="icons/how-work/3.svg" alt="arrow"></div>
+                        <div id="arrow3" class="how-work__item-arrow"><img src="icons/how-work/1_3.svg" alt="arrow"></div>
                     </div>
                     <div class="how-work__item">
                         <div class="how-work__item-circle"><div class="how-work__item-number">4</div></div>
                         <p class="how-work__item-text">Выбирает блюдо</p> 
-                        <div id="arrow4" class="how-work__item-arrow"><img src="icons/how-work/4.svg" alt="arrow"></div>
+                        <div id="arrow4" class="how-work__item-arrow"><img src="icons/how-work/1_4.svg" alt="arrow"></div>
                     </div>
                     <div class="how-work__item">
                         <div class="how-work__item-circle"><div class="how-work__item-number">5</div></div>
                         <p class="how-work__item-text">Добавляет в корзину</p> 
-                        <div id="arrow5" class="how-work__item-arrow"><img src="icons/how-work/5.svg" alt="arrow"></div>
+                        <div id="arrow5" class="how-work__item-arrow"><img src="icons/how-work/1_5.svg" alt="arrow"></div>
                     </div>
                     <div class="how-work__item">
                         <div class="how-work__item-circle"><div class="how-work__item-number">6</div></div>
                         <p class="how-work__item-text">Получает заказ</p> 
                     </div>
                 </div>
+
+                <div data-tab-how-work-content="delivery" class="how-work__content">
+                    <div class="how-work__item">
+                        <div class="how-work__item-circle">
+                            <div class="how-work__item-number">1</div>
+                        </div>
+                        <p class="how-work__item-text">Гость заходит на сайт</p>
+                        <div id="arrow1" class="how-work__item-arrow"><img src="icons/how-work/2_1.svg" alt="arrow"></div>
+                    </div>
+                    <div class="how-work__item">
+                        <div class="how-work__item-circle">
+                            <div class="how-work__item-number">2</div>
+                        </div>
+                        <p class="how-work__item-text">Просматривает меню</p>
+                        <div id="arrow2" class="how-work__item-arrow"><img src="icons/how-work/2_2.svg" alt="arrow"></div>
+                    </div>
+                    <div class="how-work__item">
+                        <div class="how-work__item-circle">
+                            <div class="how-work__item-number">3</div>
+                        </div>
+                        <p class="how-work__item-text">Выбирает блюдо</p>
+                        <div id="arrow3" class="how-work__item-arrow"><img src="icons/how-work/2_3.svg" alt="arrow"></div>
+                    </div>
+                    <div class="how-work__item">
+                        <div class="how-work__item-circle">
+                            <div class="how-work__item-number">4</div>
+                        </div>
+                        <p class="how-work__item-text">Добавляет в корзину</p>
+                        <div id="arrow4" class="how-work__item-arrow"><img src="icons/how-work/2_4.svg" alt="arrow"></div>
+                    </div>
+                    <div class="how-work__item">
+                        <div class="how-work__item-circle">
+                            <div class="how-work__item-number">5</div>
+                        </div>
+                        <p class="how-work__item-text">Оплачивает заказ</p>
+                        <div id="arrow5" class="how-work__item-arrow"><img src="icons/how-work/2_5.svg" alt="arrow"></div>
+                    </div>
+                    <div class="how-work__item">
+                        <div class="how-work__item-circle">
+                            <div class="how-work__item-number">6</div>
+                        </div>
+                        <p class="how-work__item-text">Получает заказ</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
+    <section class="relevance">
+        <div class="container">
+            <h2 class="title">Для кого актуально?</h2>
+            <div class="relevance__items">
+                <div class="relevance__item">
+                    <img src="icons/relevance/qr.png" alt="qr" class="relevance__item-img">
+                    <h4 class="relevance__item-title">Сегмент horeca</h4>
+                    <div class="relevance__item-descr">Быстрый заказ без ожидания официанта</div>
+                </div>
+                <div class="relevance__item">
+                    <img src="icons/relevance/livroom.png" alt="livery room" class="relevance__item-img">
+                    <h4 class="relevance__item-title">Гостиница</h4>
+                    <div class="relevance__item-descr">Удобный выбор блюди оформление заказа в номер</div>
+                </div>
+                <div class="relevance__item">
+                    <img src="icons/relevance/delivery.png" alt="delivery" class="relevance__item-img">
+                    <h4 class="relevance__item-title">Доставка</h4>
+                    <div class="relevance__item-descr">Без дополнительных оплат сторонним сервисамза каждую доставку</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div class="container">
+            <div class="quote__wrapper">
+                <img src="img/director.png" alt="director" class="quote__director-img">
+                <div class="quote__quote">
+                    <p class="quote__text"> «Привет, меня зовут <span>Александр Вилисов</span>,я создатель компании <span>Easy QR</span>. Я гарантирую, что, став нашим партнером, Вы получите качественное оказание услуг,оперативное решение любых вопросов, поддержку наших специалистов на каждом этапе реализации проекта. Я лично контролируювсе процессы и доступен для общения!» <img class="quote__mark" src="icons/mark.png" alt="'"></p>
+                    <p class="quote__signature">С уважением, Александр Вилисов</p>
+                    <button class="quote__btn button button_white">Подключить бесплатно</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="principal">
+        <div class="container">
+            <h2 class="title">Нам доверяют</h2>
+    
+            <div class="principal__wrapper">
+                <div class="principal__items">
+                    <div class="principal__item">
+                        <div class="principal__item-icon"><img src="img/principal/excellent.png" alt="excellent"></div>
+                        <div class="principal__item-quote">«…персональный менеджер всегда на связи…»</div>
+                    </div>
+                    <div class="principal__item">
+                        <div class="principal__item-icon"><img src="img/principal/healthy-conscience.png" alt="healthy-conscience">
+                        </div>
+                        <div class="principal__item-quote">«…сделали все сами и очень быстро…»</div>
+                    </div>
+                    <div class="principal__item principal__item_active">
+                        <div class="principal__item-icon"><img src="img/principal/mojobar.png" alt="mojobar"></div>
+                        <div class="principal__item-quote">«…наш средний чек вырос уже на 37%...»</div>
+                    </div>
+                    <div class="principal__item">
+                        <div class="principal__item-icon"><img src="img/principal/pugscoffe.png" alt="pugscoffe"></div>
+                        <div class="principal__item-quote">«…доступные цены и расширенный функционал…»</div>
+                    </div>
+                    <div class="principal__item">
+                        <div class="principal__item-icon"><img src="img/principal/barvegas.png" alt="barvegas"></div>
+                        <div class="principal__item-quote">«…мы очень довольны, что внедрили такой инструмент…»</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="container">
+            <h2 class="title">Стоимость услуг</h2>
+            <div class="price__tabs">
+                <button class="price__tabs-btn">1 месяц</button>
+                <button class="price__tabs-btn _active">3 месяца</button>
+                <button class="price__tabs-btn">12 месяцев</button>
+            </div>
+            <div class="price__items">
+                <div class="price__item">
+                    <div class="price__item-number-wrapper">
+                        <div class="price__item-number">1</div>
+                        <svg class="price__item-svg" width="77" height="77">
+                            <circle class="price__item-circle" cx="37.5" cy="38.5" r="37" fill="none" stroke="rgba(150, 174, 253, 1)"></circle>
+                        </svg>
+                    </div>
+
+                    <div class="price__item-content">
+                        <h3 class="price__item-title">Пробный период</h3>
+                        <ul class="price__item-list">
+
+                            <li class="price__item-li">Меню по QR коду</li>
+                            <li class="price__item-li">Редактирование меню</li>
+                            <li class="price__item-li">Генерация QR кодов</li>
+                            <li class="price__item-li">Вызов персонала</li>
+                            <li class="price__item-li">Изменение внешнего вида</li>
+                            <li class="price__item-li">Акции на главной</li>
+                            <li class="price__item-li">Заказы в заведении</li>
+                            <li class="price__item-li">Заказы на доставку</li>
+
+                        </ul>
+
+                        <div class="price__item-wrapper">
+                            <div class="price__item-price"><span>0 ₽</span> / месяц</div>
+                            <p class="price__item-saving price__item-saving_free">Период действия 30 дней</p>
+
+                            <button class="price__item-btn button button_short">выбрать тариф</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="price__item _short">
+                    <div class="price__item-number-wrapper">
+                        <div class="price__item-number">2</div>
+                        <svg class="price__item-svg" width="77" height="77">
+                            <circle class="price__item-circle" cx="37.5" cy="38.5" r="37" fill="none" stroke="rgba(150, 174, 253, 1)"></circle>
+                        </svg>
+                    </div>
+
+                    <div class="price__item-content">
+                        <h3 class="price__item-title">Стандарт</h3>
+                        <ul class="price__item-list">
+
+                            <li class="price__item-li">Меню по QR коду</li>
+                            <li class="price__item-li">Редактирование меню</li>
+                            <li class="price__item-li">Генерация QR кодов</li>
+
+                        </ul>
+
+                        <div class="price__item-wrapper">
+                            <div class="price__item-price"><span>1 415 ₽</span> / месяц</div>
+                            <p class="price__item-saving ">Экономия - <span>225</span> ₽</p>
+                        
+                            <button class="price__item-btn button button_short">выбрать тариф</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="price__item _short">
+                    <div class="price__item-number-wrapper">
+                        <div class="price__item-number">3</div>
+                        <svg class="price__item-svg" width="77" height="77">
+                            <circle class="price__item-circle" cx="37.5" cy="38.5" r="37" fill="none" stroke="rgba(150, 174, 253, 1)"></circle>
+                        </svg>
+                    </div>
+
+                    <div class="price__item-content">
+                        <h3 class="price__item-title">Оптимальный</h3>
+                        <ul class="price__item-list">
+
+                            <li class="price__item-li">Меню по QR коду</li>
+                            <li class="price__item-li">Редактирование меню</li>
+                            <li class="price__item-li">Генерация QR кодов</li>
+                            <li class="price__item-li">Изменение внешнего вида</li>
+                            <li class="price__item-li">Список "Хочу заказать"</li>
+                            <li class="price__item-li">Акции на главной</li>
+
+                        </ul>
+
+                        <div class="price__item-wrapper">
+                            <div class="price__item-price"><span>1 795 ₽</span> / месяц</div>
+                            <p class="price__item-saving">Экономия - <span>285</span> ₽</p>
+                        
+                            <button class="price__item-btn button button_short">выбрать тариф</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="price__item">
+                    <div class="price__item-number-wrapper">
+                        <div class="price__item-number">4</div>
+                        <svg class="price__item-svg" width="77" height="77">
+                            <circle class="price__item-circle" cx="37.5" cy="38.5" r="37" fill="none" stroke="rgba(150, 174, 253, 1)"></circle>
+                        </svg>
+                    </div>
+
+                    <div class="price__item-content">
+                        <h3 class="price__item-title">Профи</h3>
+                        <ul class="price__item-list">
+
+                            <li class="price__item-li">Меню по QR коду</li>
+                            <li class="price__item-li">Редактирование меню</li>
+                            <li class="price__item-li">Генерация QR кодов</li>
+                            <li class="price__item-li">Изменение внешнего вида</li>
+                            <li class="price__item-li">Список "Хочу заказать"</li>
+                            <li class="price__item-li">Акции на главной</li>
+                            <li class="price__item-li">Заказы в заведении</li>
+                            <li class="price__item-li">Заказы на доставку</li>
+
+                        </ul>
+
+                        <div class="price__item-wrapper">
+                            <div class="price__item-price"><span>2 365 ₽</span> / месяц</div>
+                            <p class="price__item-saving">Экономия - <span>375</span> ₽</p>
+                        
+                            <button class="price__item-btn button button_short">выбрать тариф</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="title title_white">FAQ</h2>
+            <div class="faq__items">
+
+                <div class="faq__item-wrapper">
+                    <div class="marker">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <details class="faq__item">
+                        <summary class="faq__item-title">Как подключить электронное меню?</summary>
+                        <p class="faq__item-text">Заполните заявку на сайте, меню будет создано автоматически. Необходимая информация и пошаговая инструкция будет направлена на Вашу электронную почту, указанную при регистрации.</p>
+                    </details>
+                </div>
+                
+                <div class="faq__item-wrapper">
+                    <div class="marker">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <details class="faq__item">
+                        <summary class="faq__item-title">Как вносить корректировки в меню?</summary>
+                        <p class="faq__item-text">Редактирование меню происходит в админ панели нашего сервиса, с подробной инструкцией Вы можете ознакомиться в блоге.</p>
+                    </details>
+                </div>
+
+                <div class="faq__item-wrapper">
+                    <div class="marker">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <details class="faq__item">
+                        <summary class="faq__item-title">Мне нужно привлекать программиста для поддержки работы электронного меню?</summary>
+                        <p class="faq__item-text">Интерфейс электронного меню интуитивно прост и понятен, поэтому Вы легко сможете вносить любые корректировки. Если у Вас что-то не получится, специалисты службы поддержки проконсультируют Вас в любой момент и помогут наладить функционал.</p>
+                    </details>
+                </div>
+
+                <div class="faq__item-wrapper">
+                    <div class="marker">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <details class="faq__item">
+                        <summary class="faq__item-title">Если нет времени заниматься меню, Вы поможете?</summary>
+                        <p class="faq__item-text">Конечно, совершенно бесплатно мы сделаем первоначальную настройку меню и добавим все Ваши блюда. В дальнейшем, нашаподдержка доступна для Вас 24/7.</p>
+                    </details>
+                </div>
+                <div class="faq__item-wrapper">
+                    <div class="marker">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <details class="faq__item">
+                        <summary class="faq__item-title">Как мы узнаем о заказе клиента?</summary>
+                        <p class="faq__item-text">Уведомления о заказах автоматически приходят в Telegram и в админ панель</p>
+                    </details>    
+                </div>
+                
+                <div class="faq__item-wrapper">
+                    <div class="marker">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <details class="faq__item">
+                        <summary class="faq__item-title">Как интегрировать заказ клиента с системой учета?</summary>
+                        <p class="faq__item-text">Согласно готовой пошаговой инструкции, в админ панели достаточно настроить интеграцию с Вашей системой учета.</p>
+                    </details>    
+                </div>
+                
+                <div class="faq__item-wrapper">
+                    <div class="marker">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <details class="faq__item">
+                        <summary class="faq__item-title">Клиент сможет оплатить заказ через электронное меню?</summary>
+                        <p class="faq__item-text">Конечно, наше меню взаимодействует с сервисом Cloud Payments.</p>
+                    </details>    
+                </div>
+                
+                <div class="faq__item-wrapper">
+                    <div class="marker">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <details class="faq__item">
+                        <summary class="faq__item-title">Можно ли настроить доставку через электронное меню?</summary>
+                        <p class="faq__item-text">Даже нужно. Мы рекомендуем использовать наше меню как полноценный сайт доставки с возможностью автоматической оплаты.</p>
+                    </details>    
+                </div>
+                
+                <div class="faq__item-wrapper">
+                    <div class="marker">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <details class="faq__item">
+                        <summary class="faq__item-title">Чем Вы лучше других сервисов?</summary>
+                        <p class="faq__item-text">Мы самостоятельно заполняем меню “под ключ” бесплатно, оперативно решаем любые вопросы, ежедневно расширяем функциональные возможности нашего сервиса.</p>
+                    </details>    
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/tabs.js"></script>
 </body>
 </html>

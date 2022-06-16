@@ -1,0 +1,35 @@
+.quote
+    background-color: $title-color
+    min-height: 744px 
+    padding: 100px 0 86px 
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__director-img
+        transform: translateX(-15%)
+    &__text
+        position: relative
+        font-style: italic
+        font-weight: 300
+        font-size: 24px
+        line-height: 36px
+        color: #F6F6F6
+        max-width: 583px
+        &::after
+            content: ''
+            background: url('../img/main__bg.png') no-repeat
+        & span
+            font-weight: 500
+    &__mark
+        position: absolute
+        top: -80px
+        left: -97px
+    &__signature
+        font-weight: 500
+        font-size: 24px
+        line-height: 30px
+        color: #F6F6F6
+        margin-top: 35px
+    &__btn
+        margin-top: 55px

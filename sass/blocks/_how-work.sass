@@ -13,6 +13,7 @@
         width: 100%
         &::before
             content: ''
+            transition: .4s all ease
             height: 6px
             width: 250px
             background: #BECCFA
@@ -20,6 +21,8 @@
             bottom: 0
             transform: translateY(2px)
             left: 0
+        &_delivery::before
+            left: 50%
         &-btn
             padding-bottom: 20px
             border-bottom: 2px solid #959595
@@ -32,6 +35,7 @@
                 font-weight: 600
                 color: #BECCFA
     &__content
+        display: none
         max-width: 997px
         height: 533px
         background: rgba(190, 204, 250, 0.5)
@@ -39,6 +43,10 @@
         border-radius: 10px
         margin: 61px auto 0
         padding: 71px 58px 71px 85px
+        &._active
+            display: block
+        &_1
+            display: none
     &__item
         position: relative
         height: 64px
@@ -102,3 +110,17 @@
     top: 44px
 #arrow4
     left: 372px
+
+.how-work__content:nth-child(odd)
+    .how-work__item:nth-child(2) .how-work__item-circle
+        left: 545px
+    .how-work__item:nth-child(4)
+        right: 0
+        & .how-work__item-circle
+            left: 552px
+    & #arrow1
+        left: 310px
+        top: 29px
+    & #arrow2, #arrow3, #arrow4, #arrow5
+        left: 277px
+        top: 37px

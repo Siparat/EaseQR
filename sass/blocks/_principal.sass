@@ -1,0 +1,58 @@
+.principal
+    min-height: 795px
+    padding: 101px 0 94px
+    &__items
+        display: flex
+        flex-direction: column
+        row-gap: 28px
+        height: 770px
+        justify-content: center
+    &__wrapper
+        width: 980px
+        left: 50%
+        position: absolute
+        transform: translateX(-44%)
+        height: 447px
+        overflow-y: scroll
+        direction: rtl
+        margin-top: 60px
+        display: flex
+        &::-webkit-scrollbar
+            width: 6px
+        &::-webkit-scrollbar-track 
+            background: #BBB
+            border: 1px solid rgba(255,255,255, 1)
+        &::-webkit-scrollbar-thumb 
+            background: #4A6999
+    &__wrapper > *
+        direction: ltr
+    &__item
+        position: relative
+        display: flex
+        column-gap: 59px
+        align-items: center
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(255,255,255,0.45)
+        &_active
+            column-gap: 49px
+            transform: translateX(-10px)
+            &::after
+                background: rgba(255,255,255,0)
+            & .principal__item-icon img
+                width: 80px
+                max-width: 80px
+        &-icon img 
+            max-width: 60px
+        &-quote
+            font-weight: 500
+            font-size: 24px
+            line-height: 140.5%
+            color: $grey-items-color
+
+        

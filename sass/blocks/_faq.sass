@@ -1,0 +1,84 @@
+.faq
+    background: $title-color
+    padding: 90px 0 105px
+    min-height: 1143px
+    &__items
+        margin-top: 60px
+    &__item
+        margin-top: 6px
+        width: 100%
+        max-width: 1000px
+        background: rgba(190, 204, 250, 0.5)
+        backdrop-filter: blur(4px)
+        border-radius: 10px
+        padding: 30px 41px 27px 46px
+        min-height: 87px
+        outline: none
+        transition: .5s all ease
+        &:first-child
+            margin-top: 0
+        &[open]
+            background: #CAD7FF
+            & .faq__item-title
+                color: #4A4A4A
+        &-text
+            margin-top: 16px
+            font-weight: 300
+            font-size: 18px
+            line-height: 22px
+            color: #4A4A4A
+            max-width: 755px
+        &-wrapper
+            position: relative
+            width: 100%
+            margin: 0 auto
+            max-width: 1000px
+            &:hover .marker
+                transform: rotate(45deg)
+            &:hover .marker._active,
+                transform: rotate(90deg)
+            & .marker._active
+                transform: rotate(90deg)
+        &-title
+            margin-top: 3px
+            color: #F6F6F6
+            font-weight: 600
+            font-size: 18px
+            line-height: 127%
+            cursor: pointer
+            &::marker
+                content: ''
+
+
+.marker
+    position: absolute
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    background: $title-color
+    z-index: 100
+    right: 41px
+    top: 29px
+    transition: .3s all ease
+    &:hover
+        cursor: pointer
+    & span
+        transition: .3s all ease
+        width: 14px
+        height: 1px
+        display: block
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background: #fff
+        &:first-child
+            transform: rotate(90deg) translate(-0.5px,7px)
+    &._active
+        background: #33488D
+        & span
+            display: none
+            &:first-child
+                display: block
+
+
